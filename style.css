@@ -887,9 +887,8 @@ footer span {
   }
 
   .hide1 {
-  top: -100px;
+  top: 0;
   opacity: 1;
-  z-index: 300;
 }
 
   .text-logo {
@@ -982,6 +981,16 @@ footer span {
     width: 100%;
   }
 
+  
+.btn-block button:nth-child(1) {
+  padding: 2% 10%;
+}
+
+.btn-block button:nth-child(2) {
+  padding: 1.8% 10%;
+}
+
+
   /* tab size */
 
   .skill-title {
@@ -1062,7 +1071,6 @@ footer span {
   form input,
   textarea {
     width: 16rem;
-    padding-right: 5%;
   }
 
   form input {
@@ -1083,7 +1091,7 @@ footer span {
   }
 
   .links {
-    width: 90%;
+    width: 16rem;
     margin: 10% auto;
   }
 
@@ -1220,8 +1228,8 @@ footer span {
   }
 
   .skills-main img {
-    width: 1.8em;
-    height: 1.8em;
+    width: 2.2em;
+    height: 2.2em;
   }
 
   /* project */
@@ -1259,8 +1267,8 @@ footer span {
   .about-pic {
     margin-bottom: 5%;
     margin-top: 10%;
-   width: 20rem;
-    height: 20rem;
+   width: 22rem;
+    height: 22rem;
     box-shadow: -2px -4px 5px 3px var(--secondary);
   }
 
@@ -1322,7 +1330,6 @@ footer span {
     height: fit-content;
     margin-bottom: 15%;
     margin-top: 15%;
-    width: 18rem;
   }
 
   .links li {
