@@ -6,6 +6,10 @@
   scroll-behavior: smooth;
 }
 
+.url-icon{
+  border-radius: 50%;
+}
+
 :root {
   --tran-bg: #0f151053;
   --text: #eceeed;
@@ -14,6 +18,8 @@
   --secondary: #397944;
   --accent: #5ec571;
 }
+
+
 
 body {
   background-color: var(--background);
@@ -138,12 +144,15 @@ body {
 .menu-bar {
   display: flex;
   justify-content: space-between;
-  width: 93%;
+  width: 95%;
+  margin: auto;
 }
 
 .nav-list {
   display: flex;
-  gap: 5%;
+  gap: 1%;
+  justify-content: space-between;
+  width: 30%;
 }
 
 .nav-list a {
@@ -189,9 +198,11 @@ a {
 
 .text-logo {
   font-size: 30px;
-  margin-left: 15%;
+  /* margin-left: 15%; */
   font-family: "Courier New", Courier, monospace;
   color: var(--text);
+  width: 100%;
+  /* background-color: #eceeed; */
 }
 
 .text-logo .codes {
@@ -216,7 +227,17 @@ a {
 
 .intro-block {
   margin-top: 10%;
-  font-size: 35px;
+  font-size:2rem;
+}
+
+.hello1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bolder;
+  -webkit-text-stroke: 1px var(--accent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3rem;
 }
 
 .hello {
@@ -226,6 +247,7 @@ a {
   -webkit-text-stroke: 1px var(--accent);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 2rem;
 }
 
 .btn-block {
@@ -265,19 +287,22 @@ a {
 }
 
 .home-pic {
-  width: 18rem;
-  height: 18em;
-  border-radius: 50%;
-  box-shadow: 3px 5px 2px 1px var(--secondary);
-  transform: rotate(13deg);
-  transition: 1000ms;
+  width: 19rem;
+  height: 19.5em;
+  border-radius: 20%;
+  transition: 800ms;
+    transform: rotate(10deg);
   cursor: pointer;
+    filter: drop-shadow(15px 3px 1px #573006) 
+      drop-shadow(15px 3px 0px #2e260c) ;
+    background-color: var(--tran-bg);
 }
 
 .home-pic:hover {
   transform: rotate(0deg);
   transition: 1500ms;
-  box-shadow: -3px -5px 2px 1px var(--accent);
+    filter: drop-shadow(0 0 0px var(--accent))
+    drop-shadow(2px 0px 50px var(--secondary));
 }
 
 /* home sector end */
@@ -526,6 +551,15 @@ a {
   border-radius: 1rem;
   box-shadow: -3px -5px 7px 3px var(--secondary);
   background: #0f250228;
+  transition: 1s;
+}
+
+.about-pic:hover{
+    cursor: pointer;
+    filter: drop-shadow(5px 0px 1px #573006) 
+      drop-shadow(10px 0px 0px #2e260c) ;
+    /* background-color: var(--tran-bg); */
+      box-shadow: -3px -5px 7px 3px #573006;
 }
 
 .about-block-text {
@@ -870,15 +904,12 @@ footer span {
 
   .nav-bar {
     background: linear-gradient(-210deg, black, var(--secondary));
-    position: fixed;
     top: 0;
-    left: 0;
+    left: -100%;
     bottom: 0;
     width: 50%;
     height: 100%;
-    transform: translate(-105%);
     transition: 1000ms;
-    padding-left: 3%;
     z-index: 5;
     border-radius: 0 10px 10px 0;
     margin-top: 0;
@@ -895,8 +926,7 @@ footer span {
   }
 
   .navSlide {
-    transform: translate(0%);
-    transition: 1000ms;
+  left: 0%;
   }
 
   .menu-bar {
@@ -906,6 +936,7 @@ footer span {
     padding: 1% 2%;
     width: 30%;
     height: 100%;
+    margin-left: 2%;
   }
 
   .nav-list {
@@ -915,11 +946,8 @@ footer span {
 
   .nav-list a,
   li {
-    list-style: none;
-    text-decoration: none;
-    color: var(--text);
-    margin-top: 30%;
-    width: fit-content;
+
+    margin-top: 80%;
   }
 
   .logo-block {
@@ -928,7 +956,7 @@ footer span {
   }
 
   .text-logo {
-    font-size: 40px;
+    font-size: 30px;
   }
   /* home phone */
 
@@ -941,7 +969,7 @@ footer span {
 
   .intro-block {
     margin-top: 0%;
-    font-size: 20px;
+    font-size: 1.8em;
   }
 
   .home-img-ctn {
@@ -951,7 +979,6 @@ footer span {
   .home-pic {
     width: 15rem;
     height: 15rem;
-    /* border-radius: 20px; */
     box-shadow: 6px 3px 2px 1px var(--olive);
     transform: rotate(13deg);
     transition: 1000ms;
@@ -1128,37 +1155,16 @@ footer span {
   /* nav % menu */
 
   .nav-bar {
-    top: 0;
+    width: 60%;
   }
 
-  .text-logo {
-    font-size: 20px;
-    margin-left: 0%;
-  }
-
-  .navSlide {
-    transform: translate(0%);
-    transition: 1000ms;
-  }
 
   .menu-bar {
-    display: block;
-    grid-template-columns: repeat(3, auto);
-    justify-content: space-between;
-    padding: 1% 2%;
-    width: 30%;
-    margin-top: 10%;
+    margin-top: 5%;
   }
 
   .nav-list {
     margin-left: 2%;
-  }
-
-  .nav-list a,
-  li {
-    font-size: 15px;
-    margin-top: 30%;
-    width: fit-content;
   }
 
   .logo-block img {
@@ -1181,7 +1187,7 @@ footer span {
 
   .intro-block {
     margin-top: 0%;
-    font-size: 20px;
+    font-size: 1.2rem;
   }
 
   .home-pic {
