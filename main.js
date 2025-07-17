@@ -45,33 +45,32 @@ navList.addEventListener("click", function () {
 hamburger.addEventListener("click", function () {
   navBlock.classList.toggle("navSlide");
 });
-//nav ends
 
-// // dark mode
+// scrollers
 
-// function enableDarkMode() {
-//   body.classList.toggle("darkmode");
-//   localStorage.setItem("darkMode", "enable");
-// }
+   const scrollers = document.querySelectorAll(".scroller");
 
-// function disableDarkMode() {
-//   body.classList.toggle("darkmode");
-//   localStorage.setItem("darkMode", null);
-// }
+      // If a user hasn't opted in for recuded motion, then we add the animation
+      if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        addAnimation();
+      }
 
-// if (darkMode === "enable") {
-//   enableDarkMode();
-// }
+      function addAnimation() {
+        scrollers.forEach((scroller) => {
+          // add data-animated="true" to every `.scroller` on the page
+          scroller.setAttribute("data-animated", true);
 
-// modeBlk.addEventListener("click", () => {
-//   localStorage.getItem("darkMode");
-//   if (darkMode !== "enable") {
-//     enableDarkMode(); 
-//   } else {
-//     disableDarkMode();
-//   // console.log("go");
-//   }
-// });
+          // Make an array from the elements within `.scroller-inner`
+          const scrollerInner = scroller.querySelector(".scroller__inner");
+          const scrollerContent = Array.from(scrollerInner.children);
+
+          scrollerContent.forEach((item) => {
+            const duplicatedItem = item.cloneNode(true);
+            duplicatedItem.setAttribute("aria-hidden", true);
+            scrollerInner.appendChild(duplicatedItem);
+          });
+        });
+      }
 
 //email sender
 function sendEmail(){
