@@ -1262,6 +1262,10 @@ footer span {
     z-index: -1;
   }
 
+    .product-card .main-images .hello {
+    font-size: 3rem;
+  }
+
   /* about */
   .about-pic {
     margin-bottom: 5%;
