@@ -224,6 +224,10 @@ a {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+.home-text em{
+  color: var(--accent);
+}
+
 .intro-block {
   margin-top: 10%;
   font-size: 2rem;
@@ -375,7 +379,7 @@ a {
 }
 
 .tag-list li {
-  padding: 0.3rem 1rem;
+  padding: .5rem 1rem;
   text-align: center;
   margin: auto;
   background: transparent;
@@ -396,6 +400,8 @@ a {
 .tag-list li img {
   width: 1rem;
   height: 1rem;
+  border: 1px solid var(--secondary);
+  border-radius: 50%;
 }
 
 .tag-list li span {
@@ -461,7 +467,7 @@ a {
 }
 
 .main-images h1 {
-  font-size: 80px;
+  font-size: 4rem;
   text-align: center;
   align-content: center;
   height: 100%;
@@ -469,7 +475,7 @@ a {
 }
 
 .main-images .hello{
-  font-size: 75px;
+  font-size: inherit;
 }
 
 .product-card .main-images img {
@@ -497,17 +503,20 @@ a {
 .circles {
   display: grid;
   row-gap: 15%;
+  
 }
 
 .circles span {
   display: flex;
   gap: 3%;
+
 }
 
 .circles b {
   font-weight: 300;
   font-size: 15px;
   width: 100%;
+
 }
 
 .color-option .circles .circle {
@@ -1055,7 +1064,7 @@ footer span {
   }
 
   .product-card .main-images .hello {
-    font-size: 3rem;
+    /* font-size: 3rem; */
   }
 
   /* about */
@@ -1132,7 +1141,7 @@ footer span {
 
   footer {
     margin-top: 10%;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
   }
 }
 
@@ -1173,6 +1182,7 @@ footer span {
     justify-content: center;
     flex-wrap: wrap;
     margin-top: -10%;
+    width: 95%;
   }
 
   .home-img-ctn {
@@ -1181,12 +1191,13 @@ footer span {
 
   .intro-block {
     margin-top: 0%;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
+    text-align: start;
   }
 
   .home-pic {
-    width: 18rem;
-    height: 18rem;
+    width: 20rem;
+    height: 19rem;
     /* border-radius: 20px; */
     box-shadow: 6px 3px 2px 1px var(--secondary);
     transform: rotate(13deg);
@@ -1208,16 +1219,21 @@ footer span {
     margin-bottom: 10%;
   }
 
+  .hello1{
+    font-size: 2.5rem;
+  }
+
   .home-text {
     font-size: 15px;
     width: 100%;
+    text-align: start;
   }
 
   /* skill phone size */
 
   .skill-title {
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 20%;
+    margin-bottom: 3%;
     text-align: center;
   }
 
@@ -1231,6 +1247,15 @@ footer span {
     height: 2.2em;
   }
 
+  .tag-list{
+
+  }
+
+  .tag-list li{
+      padding: .8rem 1rem;
+  gap: 0.5rem;
+  }
+
   /* project */
 
   .project-main {
@@ -1239,7 +1264,7 @@ footer span {
   }
 
   .project-title {
-    margin-bottom: 10%;
+    margin-bottom: 3%;
     margin-top: 15%;
   }
 
@@ -1260,10 +1285,6 @@ footer span {
     left: 0%;
     top: -10px;
     z-index: -1;
-  }
-
-    .product-card .main-images .hello {
-    font-size: 3rem;
   }
 
   /* about */
