@@ -594,6 +594,15 @@ footer span {
     height: 100%;
   }
 
+  /* nav */
+    .nav-list {
+    display: flex; /* Changed from none */
+    flex-direction: column;
+    margin-left: -35%;
+    margin-top: 0;
+    gap: .5rem;
+  }
+
   /* home phone */
 
   .home-sector {
@@ -710,8 +719,8 @@ footer span {
   .about-pic {
     margin-bottom: 5%;
     margin-top: 10%;
-    width: 18rem;
-    height: 16rem;
+    /* width: 18rem;
+    height: 16rem; */
     box-shadow: -2px -4px 5px 3px var(--secondary);
   }
 
@@ -808,14 +817,10 @@ footer span {
     margin-top: 5%;
   }
 
-    .menu{
-    margin-top: 50%;
-  }
-
   .nav-list {
     display: flex; /* Changed from none */
     flex-direction: column;
-    margin-left: -30%;
+    margin-left: -35%;
     margin-top: 0;
     gap: .5rem;
   }
@@ -942,8 +947,8 @@ footer span {
   .about-pic {
     margin-bottom: 5%;
     margin-top: 10%;
-    width: 22rem;
-    height: 22rem;
+    width: 20rem;
+    height: 20rem;
     box-shadow: -2px -4px 5px 3px var(--secondary);
   }
 
