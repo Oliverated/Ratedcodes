@@ -743,16 +743,16 @@ footer span {
 
   form input,
   textarea {
-    width: 16rem;
+    width: 100%;
   }
 
   form input {
     height: 6vh;
-    padding: 0.1% 0;
+    padding: 2%;
   }
 
   textarea {
-    height: 5rem;
+    height: 6rem;
   }
 
   #send {
@@ -995,12 +995,8 @@ footer span {
 
   form input,
   textarea {
-    width: 18rem;
+    width: 100%;
     padding-left: 3%;
-  }
-
-  form input {
-    height: 1.8rem;
   }
 
   textarea {
