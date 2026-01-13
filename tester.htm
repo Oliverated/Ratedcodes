@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Typewriter — Minimal</title>
+  <style>
+    .typewriter { font-family: monospace; white-space: nowrap; overflow: hidden; }
+    .cursor {
+      display: inline;
+      width: 1ch;
+      animation: blink 1s steps(2, start) infinite;
+      vertical-align: bottom;
+      font-size: 12px;
+    }
+    @keyframes blink { to { visibility: hidden; } }
+  </style>
+</head>
+<body>
+  <span class="typewriter" id="type"></span><span class="cursor">🖋️</span>
+  <script>
+    const el = document.getElementById('type');
+    let cursor = document.querySelector(".cursor")
+    const text = "Hello — this is a simple typewriter effect!";
+    const speed = 100; // ms per character
+
+    let i = 0;
+    function type() {
+      if (i <= text.length) {
+        el.textContent = text.slice(0, i);
+        i++;
+        setTimeout(type, speed);
+
+        // console.log(
+        //     type, speed, text.length,  setTimeout(speed)
+        // )
+      } else{
+        cursor.style.display = "none"
+      }
+    }
+    type();
+  </script>
+</body>
+</html>

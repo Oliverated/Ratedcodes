@@ -1,0 +1,115 @@
+@media(max-width:768px){
+  .home-sector {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-top: 15%;
+  }
+
+  .home-text {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1rem;
+  }
+
+  .intro-block {
+    margin-bottom: 1rem;
+  }
+
+  .hello1 {
+    font-size: 2.5rem;
+  }
+
+  .btn-block {
+    justify-content: center;
+  }
+
+  .home-pic {
+    width: 280px;
+    height: 280px;
+    margin-top: 3rem;
+  }
+
+  /* Skills */
+  .skill-title {
+    margin-top: 50px;
+    font-size: 1.5rem; /* Reduced from 2rem */
+  }
+
+  /* Projects */
+  .project-title {
+    font-size: 1.5rem; /* Reduced from 2rem */
+    margin-top: 50px;
+  }
+
+  .product-card {
+    min-width: 280px;
+    padding: 1.5rem;
+  }
+
+  .main-images h1 {
+    font-size: 1.5rem;
+  }
+
+  /* About */
+  .about-main {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .about-pic {
+    width: 250px;
+    height: 250px;
+  }
+
+  .about-block-text {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  /* Contact */
+  form {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .contact-main {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media(max-width:600px){
+  .home-sector {
+    width: 95%;
+  }
+
+  .hello1 {
+    font-size: 2rem;
+  }
+
+  .home-pic {
+    width: 250px;
+    height: 250px;
+  }
+
+  .nav-list {
+    display: none; /* Mobile menu should be implemented if needed, or keeping simple scroll matches */
+  }
+  
+  /* If there's a mobile menu toggle, ensure it's visible. 
+     Assuming existing partial implementation or simple scroll for now. */
+
+  .product-card {
+    min-width: 85vw;
+  }
+
+  form {
+    width: 95%;
+  }
+  
+  .links, .icons-block {
+    width: 95%;
+  }
+}

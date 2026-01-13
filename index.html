@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=0.67, maximum-scale=0.8, user-scalable=no"
+      content="width=device-width, initial-scale=1.0"
     />
     <!-- seo optimisation -->
     <meta
@@ -30,15 +30,25 @@
     <meta property="og:type" content="website" />
 
     <!-- seo optimisation end -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="aos.css" />
+    <script defer src="aos.js"></script>
     <script defer src="main.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
-    <link class="url-icon" rel="icon" href="./general-img/ratedcodes-logo.png" />
-    <link rel="stylesheet" href="aos.css" />
-    <script defer src="aos.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+      class="url-icon"
+      rel="icon"
+      href="./general-img/ratedcodes-logo.png"
+    />
+    <link rel="stylesheet" href="required.css">
+    <link rel="stylesheet" href="mobile.css">
+        <link rel="stylesheet" href="style.css" />
+
     <title>Ratedcodes</title>
   </head>
 
@@ -48,24 +58,14 @@
     </div>
 
     <!-- nav > start -->
-    <header class="nav">
-      <div class="ham-block">
-        <div class="hamburger">
-          <div>
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
+   <div class="cover-bg"></div>
+    <header>
+      <span class="harm">&#9776;</span>
+      <nav>
+        <div class="menu">
+          <div class="logo"
+            ><a href="#"> Rated<em class="special">codes</em> < /> </span> </a>
           </div>
-        </div>
-      </div>
-
-      <nav class="nav-bar">
-        <div class="menu-bar">
-          <a class="logo-block" href="#">
-            <!-- <img class="img-logo" src="./general-img/oliverated1.png" alt="" /> -->
-            <h5 class="text-logo">Rated<span class="codes">Codes</span></h5>
-          </a>
-
           <ul class="nav-list">
             <li><a href="#sector1">Home</a></li>
             <li><a href="#sector2">skills</a></li>
@@ -87,12 +87,13 @@
           class="home-text-block"
         >
           <div class="intro-block">
-            <span class="hello1" >Hello,</span> I am
-            Ovbiebo O. <span class="oliver"> Oliver; </span>
+            <span class="hello1">Hello,</span> <span class="typewriter" id="type"></span><span class="cursor">🖋️</span>
           </div>
           <article class="home-text">
-            I am a <span class="developer">fullstack developer</span> with more than  <em>2years</em> of solid experience 
-            I build websites that make your business better, Go straight to my <a href="#sector3"> <em>portfolio</em> </a> to check it out!!
+            I am a <span class="developer">fullstack developer</span> with more
+            than <em>2years</em> of solid experience I build websites that make
+            your business better, Go straight to my
+            <a href="#sector3"> <em>portfolio</em> </a> to check it out!!
           </article>
           <div class="btn-block">
             <button> <a href="tel:+234 915-7301-644">Call Now</a> </button>
@@ -105,7 +106,11 @@
         </div>
 
         <div data-aos="zoom-in" data-aos-duration="1500" class="home-img-ctn">
-          <img class="home-pic" src="general-img/file_0000000067f862439784620d1592acfc.png" alt="" />
+          <img
+            class="home-pic"
+            src="general-img/file_0000000067f862439784620d1592acfc.png"
+            alt=""
+          />
         </div>
       </main>
     </section>
@@ -115,35 +120,36 @@
     <section id="sector2" class="skills">
       <h2 class="skill-title">My <span class="hello"> skills</span></h2>
       <main class="skills-main">
-    <div class="scroller" data-direction="right">
-      <ul class="tag-list scroller__inner">
-        <li><img src="skills-img/html.png" alt="" />HTML</li>
-        <li><img src="skills-img/css.png" alt="" /> CSS</li>
-        <li><img src="skills-img/js.png" alt="" /> Javascript</li>
-        <li> <img src="skills-img/atom.png" alt="" /> React</li>
-        <li>
-          <img src="skills-img/icons8-bootstrap-240.png" alt="" /> Bootstrap</li
-        >
-        <!-- <li><img src="skills-img/ta" alt="" />  Tailwind</li> -->
-        <li><img src="skills-img/php.png" alt="" /> PHP</li>
-        <li><img src="skills-img/laravel.png" alt="" /> Laravel</li>
-        <li><img src="skills-img/mysql.png" alt="" /> MySql</li>
-        <li> <img src="skills-img/python.png" alt="" /> Python</li>
-        <li> <img src="skills-img/git.png" alt="" /> Git</li>
-      </ul>
-    </div>
+        <div class="scroller" data-direction="right">
+          <ul class="tag-list scroller__inner">
+            <li><img src="skills-img/html.png" alt="" />HTML</li>
+            <li><img src="skills-img/css.png" alt="" /> CSS</li>
+            <li><img src="skills-img/js.png" alt="" /> Javascript</li>
+            <li> <img src="skills-img/atom.png" alt="" /> React</li>
+            <li>
+              <img src="skills-img/icons8-bootstrap-240.png" alt="" />
+              Bootstrap
+            </li>
+            <!-- <li><img src="skills-img/ta" alt="" />  Tailwind</li> -->
+            <li><img src="skills-img/php.png" alt="" /> PHP</li>
+            <li><img src="skills-img/laravel.png" alt="" /> Laravel</li>
+            <li><img src="skills-img/mysql.png" alt="" /> MySql</li>
+            <li> <img src="skills-img/python.png" alt="" /> Python</li>
+            <li> <img src="skills-img/git.png" alt="" /> Git</li>
+          </ul>
+        </div>
 
-    <div class="scroller" data-speed="">
-      <ul class="tag-list scroller__inner">
-        <li> <span>Team Player</span></li>
-        <li> <span>Good communication skills</span></li>
-        <li> <span>Responsive Website</span></li>
-        <li> <span>Great Designer</span></li>
-        <li> <span>Problem Solver</span></li>
-        <li> <span>Team Player</span></li>
-        <li> <span>Code Engineer ⚙️</span></li>
-      </ul>
-    </div>
+        <div class="scroller" data-speed="">
+          <ul class="tag-list scroller__inner">
+            <li> <span>Team Player</span></li>
+            <li> <span>Good communication skills</span></li>
+            <li> <span>Responsive Website</span></li>
+            <li> <span>Great Designer</span></li>
+            <li> <span>Problem Solver</span></li>
+            <li> <span>Team Player</span></li>
+            <li> <span>Code Engineer ⚙️</span></li>
+          </ul>
+        </div>
       </main>
     </section>
     <!-- skills > end -->
@@ -153,7 +159,7 @@
       <h2 class="project-title">Latest <span class="hello"> Projects</span></h2>
 
       <main class="project-main">
-                <div data-aos="fade-up" class="product-card">
+        <div data-aos="fade-up" class="product-card">
           <div class="tool-block">
             <img class="tool-img" src="skills-img/html.png" />
             <img class="tool-img" src="skills-img/css.png" />
@@ -214,7 +220,7 @@
           </div>
         </div>
 
-                <!-- swiftnote -->
+        <!-- swiftnote -->
         <div data-aos="fade-up" class="product-card">
           <div class="tool-block">
             <img class="tool-img" src="skills-img/html.png" />
@@ -324,14 +330,16 @@
         >
           <article class="about-text">
             I am a talented and passionate developer with solid experience,
-            working with various business owners and also countless of developers
-    
+            working with various business owners and also countless of
+            developers
+
             <br />
             I have a strong foundation in web development, with expertise in
-            HTML, CSS, JavaScript, React, Tailwind and PHP... I am proficient in building dynamic
-            and responsive websites that provide an exceptional user experience.
-            My passion for coding drives me to continuously learn and stay
-            updated with the latest technologies and trends in the industry.
+            HTML, CSS, JavaScript, React, Tailwind and PHP... I am proficient in
+            building dynamic and responsive websites that provide an exceptional
+            user experience. My passion for coding drives me to continuously
+            learn and stay updated with the latest technologies and trends in
+            the industry.
             <br />
             <br />
             I am dedicated to delivering high-quality code and ensuring that my
@@ -339,7 +347,7 @@
             thrive in collaborative environments and enjoy working with teams to
             bring innovative ideas to life.
           </article>
-          <a class="download" href="doc/Ovbiebo O. Oliver2.pdf" download
+          <a class="download" href="doc/Ovbiebo O. Oliver FS.pdf" download
             >Download Resume</a
           >
         </div>
