@@ -46,7 +46,7 @@ window.addEventListener("scroll", () => {
   } else {
     nav_bar.classList.add("match");
   }
-  last_navScroll >= navScroll;
+  last_navScroll = navScroll;
 });
 
 let txtBlock = document.getElementById("text-block");

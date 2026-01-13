@@ -804,13 +804,22 @@ footer span {
     width: 60%;
   }
 
-  .menu-bar {
+  .menu {
     margin-top: 5%;
   }
 
-  .nav-list {
-    margin-left: 2%;
+    .menu{
+    margin-top: 50%;
   }
+
+  .nav-list {
+    display: flex; /* Changed from none */
+    flex-direction: column;
+    margin-left: -40%;
+    margin-top: 0;
+    gap: .5rem;
+  }
+
 
   .logo-block img {
     margin: auto;
@@ -955,7 +964,7 @@ footer span {
     color: var(--text);
     border-radius: 20px;
     display: block;
-    width: 50%;
+    width: 65%;
     text-align: center;
     margin: 3% auto;
   }
