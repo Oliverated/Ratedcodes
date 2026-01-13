@@ -815,7 +815,7 @@ footer span {
   .nav-list {
     display: flex; /* Changed from none */
     flex-direction: column;
-    margin-left: -40%;
+    margin-left: -30%;
     margin-top: 0;
     gap: .5rem;
   }
