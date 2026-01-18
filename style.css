@@ -737,9 +737,19 @@ footer span {
   }
 
   /* contact */
+    .contact{
+    width: 100%;
+  }
+  
   .contact-main {
     display: grid;
+    width: 100%;
   }
+
+form {
+  width: 650px;
+    padding: 2rem;
+}
 
   form input,
   textarea {
@@ -978,6 +988,7 @@ footer span {
   }
 
   /* contact */
+
   .email-title {
     margin-bottom: 10%;
   }

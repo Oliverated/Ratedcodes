@@ -181,7 +181,7 @@ nav {
   height: 10vh;
   align-content: center;
   z-index: 100;
-  border-radius: 50px; /* More rounded for modern look */
+  border-radius: 20px; /* More rounded for modern look */
   margin: auto;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
