@@ -263,6 +263,7 @@ section h2 {
   gap: 0.5rem;
   margin-bottom: 1%;
   margin-left: auto;
+  padding-right: 1%;
 }
 
 .tool-block .tool-img {
@@ -271,10 +272,11 @@ section h2 {
   padding: 0.2rem;
   border-radius: 5px;
   margin-bottom: 3%;
+  box-shadow: rgba(81, 0, 0, 0.4) 0px 2px 4px, rgba(73, 0, 0, 0.3) 0px 7px 13px -3px, rgba(80, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .product-card .main-images {
-  height: 200px;
+  height: 30dvh;
   object-fit: cover;
   display: flex;
   justify-content: center;
@@ -1039,6 +1041,12 @@ footer span {
   .product-card {
     min-width: 90dvw;
     height: 50dvh;
+    padding: 2.5%;
+  }
+
+  .product-card .main-images{
+    max-height: 20dvh;
+    align-content: center;
   }
 
   .testimonial-title{
