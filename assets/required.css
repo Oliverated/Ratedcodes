@@ -157,7 +157,7 @@ svg {
   --text: #ffe7e7ee;
   --background: #060000;
   --primary: #ff2020;
-  --secondary: #d00f0f;
+  --secondary: #900000;
   /* --accent: #ff2121;          */
   --glass-bg: rgba(59, 30, 30, 0.4);
   --glass-border: rgba(255, 255, 255, 0.1);
@@ -315,7 +315,7 @@ svg {
   /* text-shadow: 0 0 2px #ffffff, 0 0 1px #c9eddf, 0 0 1px #FFF; */
   letter-spacing: 5px;
   position: relative;
-  font-family: cursive;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .loader::after {
@@ -349,6 +349,7 @@ svg {
   color: var(--text);
   opacity: 8;
   margin-bottom: 0;
+  font-family: cursive;
 }
 
 .loader-masthead em {
@@ -422,7 +423,6 @@ nav {
   top: 2vh;
   left: 3vh;
   width: 24%;
-    /* min-width: 30%; */
   height: 95vh;
   z-index: 100;
   border-radius: 15px;

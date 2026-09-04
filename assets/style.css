@@ -92,15 +92,19 @@ html {
   gap: 1rem;
 }
 
-.btn-block button:nth-child(1) {
-  background: var(--text);
-  color: var(--primary);
-  padding: 0.8rem 2rem;
+.btn-block button{
+    padding: 1% 2rem;
   border-radius: 15px;
   font-weight: bold;
   border: none;
   transition: 0.5s;
   font-size: 1rem;
+}
+
+.btn-block button:nth-child(1) {
+  background: var(--text);
+  color: var(--primary);
+
 }
 
 .btn-block button:nth-child(1):hover {
@@ -115,11 +119,6 @@ html {
   background: transparent;
   border: 1px solid var(--text);
   color: var(--text);
-  padding: 0.8rem 2rem;
-  border-radius: 15px;
-  font-weight: bold;
-  transition: 0.5s;
-  font-size: 1rem;
 }
 
 .btn-block button:nth-child(2):hover {
@@ -368,7 +367,6 @@ box-shadow: rgba(81, 0, 0, 0.4) 0px 2px 4px, rgba(73, 0, 0, 0.3) 0px 7px 13px -3
 
 .testimonial-main {
   max-width: 900px;
-  /* wide enough for 2 cards on desktop */
   margin: 0 auto;
   position: relative;
 }
@@ -383,7 +381,6 @@ box-shadow: rgba(81, 0, 0, 0.4) 0px 2px 4px, rgba(73, 0, 0, 0.3) 0px 7px 13px -3
   transition: transform 0.5s ease;
 }
 
-/* each slide holds 1 or 2 cards depending on viewport - see JS */
 .carousel-slide {
   flex: 0 0 100%;
   display: flex;
@@ -415,7 +412,7 @@ box-shadow: rgba(81, 0, 0, 0.4) 0px 2px 4px, rgba(73, 0, 0, 0.3) 0px 7px 13px -3
   height: 44px;
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.15);
-  background: #9b0000;
+  background: var(--secondary);
   color: #fff;
   font-size: 1rem;
   cursor: pointer;
@@ -432,12 +429,6 @@ transition: 500ms;
 scale: .9;
 }
 
-/* .carousel-arrow.prev { left: -56px; } */
-.carousel-arrow.next {
-  right: -56px;
-}
-
-
 .quote-icon {
   width: 40px;
   color: var(--primary);
@@ -445,7 +436,6 @@ scale: .9;
 }
 
 .testimonial-text {
-  /* color: #cfcfcf; */
   font-size: 15px;
   line-height: 1.6;
   margin-bottom: 16px;
@@ -476,7 +466,7 @@ scale: .9;
 }
 
 .dot.active {
-  background: linear-gradient(90deg, #ff512f, #dd2476);
+  background: linear-gradient(90deg, #ff512f, #dd2424);
   transform: scale(1.3);
 }
 
@@ -816,13 +806,9 @@ footer span {
     text-align: start;
   }
 
-  .btn-block button:nth-child(1) {
-    padding: 2% 10%;
-  }
-
-  .btn-block button:nth-child(2) {
-    padding: 1.8% 10%;
-  }
+.btn-block button{
+    padding: 1.2% 2rem;
+}
 
   /* tab size */
 
@@ -850,8 +836,6 @@ footer span {
 /* testimonial */
 
 /* laptop/desktop: 2 cards per view (this is the default set above) */
-
-
   .testimonial-main {
     max-width: 550px;
   }
@@ -1012,6 +996,9 @@ footer span {
     text-align: start;
   }
 
+  .btn-block button{
+    padding: .6rem 2rem;
+}
   /* skill phone size */
 
   .skill-title {
@@ -1033,7 +1020,7 @@ footer span {
   /* .tag-list removed empty rule */
 
   .tag-list li {
-    padding: 0.8rem 1rem;
+    padding: 0.6rem 1rem;
     gap: 0.5rem;
   }
 
@@ -1050,20 +1037,36 @@ footer span {
   }
 
   .product-card {
-    position: relative;
-    /* min-width: 100%; */
-    height: 450px;
-    border-radius: 25px;
-    padding: 10px;
-    padding-top: 1%;
-    z-index: 3;
-    overflow: hidden;
+    min-width: 90dvw;
+    height: 50dvh;
   }
 
   .testimonial-title{
-    font-size: 25px;
-    margin-bottom: 5%;
+    font-size: 30px;
+    margin-bottom: 7%;
+    text-align: start;
+    padding-left: 5%;
   }
+  .arrow-block{
+    padding-right: 5%;
+  }
+
+  .carousel-arrow {
+  width: 35px;
+  height: 35px;
+  }
+
+  .carousel-arrow svg{
+    width: 30px;
+  }
+
+  .testimonial-card {
+  padding: 20px;
+}
+
+.about-main{
+  gap: 10px;
+}
 
   .about-pic{
     width: 25rem;
@@ -1071,6 +1074,7 @@ footer span {
 
   .about-block-text {
     font-size: 15px;
+    width: 95%;
   }
 
   .download {
@@ -1092,7 +1096,7 @@ footer span {
   form {
     text-align: center;
     margin-top: 0%;
-    width: 30rem;
+    width: 90dvw;
     padding: 3%;
   }
 
@@ -1101,10 +1105,12 @@ footer span {
     width: 100%;
     padding-left: 3%;
     margin-bottom: 5%;
+    height: 3rem;
   }
 
   textarea {
     height: 8rem;
+    margin-bottom: 0;
   }
 
   .links {
@@ -1120,9 +1126,10 @@ footer span {
   }
 
   .icons-block {
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     height: fit-content;
-    padding: 2%;
+    padding: 1%;
+    width: 90dvw;
   }
 
   .icons-block a{
@@ -1135,6 +1142,6 @@ footer span {
   }
 
   footer {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
