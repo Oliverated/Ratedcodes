@@ -117,13 +117,13 @@ html {
 
 .btn-block button:nth-child(2) {
   background: transparent;
-  border: 1px solid var(--text);
-  color: var(--text);
+  border: 1px solid var(--primary);
+  color: var(--primary);
 }
 
 .btn-block button:nth-child(2):hover {
-  border-color: var(--primary);
-  color: var(--primary);
+  border-color: var(--secondary);
+  color: var(--secondary);
 }
 
 .btn-block button a {
@@ -259,6 +259,7 @@ section h2 {
 }
 
 .tool-block {
+  position: relative;
   display: flex;
   gap: 0.5rem;
   margin-bottom: 1%;
@@ -267,12 +268,47 @@ section h2 {
 }
 
 .tool-block .tool-img {
-  width: 1.6rem;
-  height: 1.6rem;
-  padding: 0.2rem;
+  position: relative;
+  z-index: 30;
+  width: 2rem;
+  height: 2rem;
+  padding: .4rem;
   border-radius: 5px;
   margin-bottom: 3%;
-  box-shadow: rgba(81, 0, 0, 0.4) 0px 2px 4px, rgba(73, 0, 0, 0.3) 0px 7px 13px -3px, rgba(80, 0, 0, 0.2) 0px -3px 0px inset;
+  box-shadow: #51000066 0px 2px 2px, #4900004d 0px 7px 10px -3px, #1717173e 0px -2px 0px inset;
+  background-color: var(--text);
+  border: 1px solid var(--glass-border);
+  border-radius: 50%;
+  transition: 1s;
+}
+
+.tool-block .tool-img:hover{
+scale: 1.15;
+}
+
+.tool-block .tool-img:nth-child(1){
+  left: 120px;
+  z-index: 4;
+  background-color: #feddcdda;
+}
+.tool-block .tool-img:nth-child(2){
+  left: 60px;
+  z-index: 3;
+  background-color: #c7e2f9ec;
+}
+.tool-block .tool-img:nth-child(3){
+  z-index: 2;
+     left: 0px;
+  background-color: #f0e7c1ec;
+}
+.tool-block .tool-img:nth-child(4){ 
+  left: -60px;
+  background-color: #faeeebd7;
+  z-index: 1;
+}
+
+.tool-block .tool-img[src="skills-img/php.png" ]{
+  background-color: #e8e9ffe5;
 }
 
 .product-card .main-images {
